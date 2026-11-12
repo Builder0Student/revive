@@ -3,10 +3,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Builder0Student/revive/releases/latest"><img alt="Download build 3" src="https://img.shields.io/badge/download-build%203-ffb04a?style=for-the-badge&logo=android&logoColor=white"></a>
-  <img alt="arm64-v8a" src="https://img.shields.io/badge/runs%20on-arm64--v8a-3ddc84?style=for-the-badge&logo=android&logoColor=white">
-  <img alt="Private server built in" src="https://img.shields.io/badge/server-built%20in-8a63d2?style=for-the-badge">
-  <img alt="Internet not needed" src="https://img.shields.io/badge/internet-not%20needed-2b2b3b?style=for-the-badge">
+  <a href="https://github.com/Builder0Student/revive/releases/latest"><img alt="Download build 3" src="docs/badges/download.svg"></a>
+  <img alt="Runs on arm64-v8a" src="docs/badges/arm64.svg">
+  <img alt="Private server built in" src="docs/badges/server.svg">
+  <img alt="Internet not needed" src="docs/badges/offline.svg">
 </p>
 
 <p align="center">
