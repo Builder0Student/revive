@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="158" height="28" viewBox="0 0 158 28" role="img" aria-label="Download: Build 3">
+  <title>Download: Build 3</title>
+  <clipPath id="c"><rect width="158" height="28" rx="4"/></clipPath>
+  <g clip-path="url(#c)">
+    <rect width="83" height="28" fill="#24292f"/>
+    <rect x="83" width="75" height="28" fill="#e8711f"/>
+  </g>
+  <g fill="#ffffff" font-family="Verdana,Geneva,'DejaVu Sans',sans-serif" font-size="10.5" font-weight="700" text-anchor="middle">
+    <text x="41.5" y="18" textLength="61" lengthAdjust="spacingAndGlyphs" fill-opacity="0.85">DOWNLOAD</text>
+    <text x="120.5" y="18" textLength="53" lengthAdjust="spacingAndGlyphs">BUILD 3</text>
+  </g>
+</svg>
