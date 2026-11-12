@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660" role="img" aria-label="How the revived Arel Wars 2 app fits together">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#c9b8ff"/>
+    </marker>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#ffc94a"/>
+    </marker>
+    <marker id="arrowGrey" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#6b6478"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+    .h { font-size: 19px; font-weight: 700; fill: #f6f1ff; }
+    .s { font-size: 14.5px; fill: #c7bedb; }
+    .m { font-size: 13.5px; fill: #ffe3a0; font-family: Consolas, 'SF Mono', Menlo, monospace; }
+    .tag { font-size: 13px; font-weight: 700; letter-spacing: 1.5px; }
+  </style>
+
+  <rect width="1200" height="660" rx="22" fill="#0e0b1a"/>
+
+  <!-- phone frame -->
+  <rect x="24" y="24" width="1152" height="612" rx="18" fill="none" stroke="#3a3150" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="48" y="56" class="tag" fill="#8f86a6">YOUR PHONE · 64-BIT-ONLY ANDROID</text>
+
+  <!-- app box -->
+  <rect x="48" y="76" width="830" height="536" rx="16" fill="#171228" stroke="#ffc94a" stroke-opacity="0.55" stroke-width="2"/>
+  <text x="72" y="108" class="tag" fill="#ffc94a">ONE APK · "ARELWARS2-64BIT-SERVER-3.APK"</text>
+
+  <!-- translation layer -->
+  <rect x="72" y="126" width="782" height="92" rx="12" fill="#2a1f4a" stroke="#9b7bff" stroke-width="1.5"/>
+  <text x="96" y="160" class="h">ZettaBridge translation layer</text>
+  <text x="96" y="186" class="s">Runs the game's 32-bit ARM code on a CPU that only understands 64-bit,</text>
+  <text x="96" y="206" class="s">with its own 32-bit system libraries (linker, libc, libm, libc++, libz).</text>
+  <text x="830" y="160" text-anchor="end" class="m">libzbridge.so</text>
+
+  <!-- game box -->
+  <rect x="72" y="256" width="440" height="332" rx="12" fill="#1f1830" stroke="#4a3f66" stroke-width="1.5"/>
+  <text x="96" y="290" class="h">The original game (Gamevil, 2012)</text>
+  <text x="96" y="314" class="s">Imported on first launch from the copy inside the APK</text>
+  <text x="96" y="350" class="m">libgameDSO.so</text><text x="236" y="350" class="s">32-bit ARM, C++</text>
+  <text x="96" y="374" class="m">classes.dex</text><text x="236" y="374" class="s">Gamevil Java code</text>
+  <line x1="96" y1="398" x2="488" y2="398" stroke="#4a3f66"/>
+  <text x="96" y="428" class="tag" fill="#5fd39a">CHANGED IN THIS PROJECT</text>
+  <text x="96" y="456" class="s">✓  Network / "out of date" popups removed</text>
+  <text x="96" y="482" class="s">✓  START crash fixed (1 byte in the map loader)</text>
+  <text x="96" y="508" class="s">✓  Server address points at this phone</text>
+  <text x="96" y="550" class="s" fill="#8f86a6">Everything else is untouched.</text>
+
+  <!-- runs arrow -->
+  <line x1="292" y1="218" x2="292" y2="252" stroke="#c9b8ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="304" y="241" class="s" fill="#c9b8ff">runs</text>
+
+  <!-- server box -->
+  <rect x="582" y="256" width="272" height="332" rx="12" fill="#1f1830" stroke="#5fd39a" stroke-opacity="0.7" stroke-width="1.5"/>
+  <text x="606" y="290" class="h">Private server</text>
+  <text x="606" y="314" class="s">A thread inside the same app</text>
+  <text x="606" y="350" class="m">127.0.0.1:17001</text>
+  <text x="606" y="390" class="s">• accounts and names</text>
+  <text x="606" y="416" class="s">• cash, shop list, daily reward</text>
+  <text x="606" y="442" class="s">• GM account</text>
+  <text x="606" y="468" class="s">• save backup / restore</text>
+  <text x="606" y="494" class="s">• messages and mail (empty)</text>
+  <text x="606" y="550" class="s" fill="#8f86a6">Only reachable from this phone</text>
+
+  <!-- game <-> server -->
+  <line x1="516" y1="420" x2="578" y2="420" stroke="#ffc94a" stroke-width="2.5" marker-start="url(#arrowGold)" marker-end="url(#arrowGold)"/>
+  <text x="547" y="404" text-anchor="middle" class="s" fill="#ffe3a0">TCP</text>
+  <text x="547" y="446" text-anchor="middle" class="s" fill="#ffe3a0">game's</text>
+  <text x="547" y="464" text-anchor="middle" class="s" fill="#ffe3a0">protocol</text>
+
+  <!-- android system -->
+  <rect x="918" y="126" width="234" height="200" rx="12" fill="#13202a" stroke="#4fb3d9" stroke-opacity="0.7" stroke-width="1.5"/>
+  <text x="942" y="160" class="h">Android (64-bit)</text>
+  <text x="942" y="194" class="s">graphics (OpenGL ES)</text>
+  <text x="942" y="218" class="s">sound</text>
+  <text x="942" y="242" class="s">touch and input</text>
+  <text x="942" y="266" class="s">files and storage</text>
+  <line x1="858" y1="172" x2="914" y2="172" stroke="#c9b8ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="942" y="304" class="s" fill="#8fd3ee">reached through the bridge</text>
+
+  <!-- dead servers -->
+  <rect x="918" y="404" width="234" height="184" rx="12" fill="#1a1418" stroke="#6b4652" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="942" y="440" class="h" fill="#a4949b">Gamevil servers</text>
+  <text x="942" y="470" class="s" fill="#8d7d84">Offline for good.</text>
+  <text x="942" y="494" class="s" fill="#8d7d84">Never contacted.</text>
+  <g stroke="#e05561" stroke-width="5" stroke-linecap="round">
+    <line x1="1092" y1="520" x2="1128" y2="556"/>
+    <line x1="1128" y1="520" x2="1092" y2="556"/>
+  </g>
+  <line x1="882" y1="560" x2="914" y2="560" stroke="#6b6478" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrowGrey)"/>
+</svg>

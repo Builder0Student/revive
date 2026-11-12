@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" width="1280" height="420" role="img" aria-label="Revive: Arel Wars 2 running again on 64-bit Android">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b0f24"/>
+      <stop offset="0.55" stop-color="#1d1438"/>
+      <stop offset="1" stop-color="#3a1630"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.62" r="0.42">
+      <stop offset="0" stop-color="#ff9a3c" stop-opacity="0.55"/>
+      <stop offset="0.45" stop-color="#ff6a3c" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#ff6a3c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff1b8"/>
+      <stop offset="0.45" stop-color="#ffc94a"/>
+      <stop offset="1" stop-color="#e8711f"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#140c22"/>
+      <stop offset="1" stop-color="#07050d"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="420" fill="url(#sky)"/>
+  <rect width="1280" height="420" fill="url(#grid)"/>
+  <rect width="1280" height="420" fill="url(#glow)"/>
+
+  <!-- stars -->
+  <g fill="#ffffff">
+    <circle cx="92" cy="54" r="1.4" opacity="0.7"/><circle cx="188" cy="112" r="1" opacity="0.5"/>
+    <circle cx="262" cy="38" r="1.6" opacity="0.8"/><circle cx="350" cy="88" r="1" opacity="0.4"/>
+    <circle cx="430" cy="30" r="1.2" opacity="0.6"/><circle cx="840" cy="40" r="1.3" opacity="0.7"/>
+    <circle cx="912" cy="104" r="1" opacity="0.45"/><circle cx="1004" cy="58" r="1.6" opacity="0.8"/>
+    <circle cx="1090" cy="120" r="1" opacity="0.5"/><circle cx="1190" cy="46" r="1.3" opacity="0.65"/>
+    <circle cx="1240" cy="140" r="1" opacity="0.4"/><circle cx="40" cy="150" r="1" opacity="0.4"/>
+  </g>
+
+  <!-- embers rising -->
+  <g fill="#ffb04a">
+    <circle cx="470" cy="338" r="1.6" opacity="0.55"/><circle cx="536" cy="352" r="2" opacity="0.7"/>
+    <circle cx="604" cy="336" r="1.3" opacity="0.5"/><circle cx="676" cy="356" r="2.2" opacity="0.6"/>
+    <circle cx="742" cy="340" r="1.2" opacity="0.45"/><circle cx="812" cy="350" r="1.7" opacity="0.55"/>
+  </g>
+
+  <!-- left tower -->
+  <g fill="#120a1e" stroke="#3b2552" stroke-width="2">
+    <path d="M70 420 V250 H62 V222 H80 V236 H96 V222 H114 V236 H130 V222 H148 V250 H140 V420 Z"/>
+    <path d="M150 420 V300 H144 V280 H158 V290 H172 V280 H186 V290 H200 V280 H214 V300 H208 V420 Z"/>
+  </g>
+  <rect x="96" y="290" width="18" height="30" rx="9" fill="#ffb04a" opacity="0.85"/>
+  <rect x="172" y="330" width="14" height="22" rx="7" fill="#ffb04a" opacity="0.6"/>
+
+  <!-- right tower -->
+  <g fill="#120a1e" stroke="#3b2552" stroke-width="2">
+    <path d="M1210 420 V250 H1218 V222 H1200 V236 H1184 V222 H1166 V236 H1150 V222 H1132 V250 H1140 V420 Z"/>
+    <path d="M1130 420 V300 H1136 V280 H1122 V290 H1108 V280 H1094 V290 H1080 V280 H1066 V300 H1072 V420 Z"/>
+  </g>
+  <rect x="1166" y="290" width="18" height="30" rx="9" fill="#ffb04a" opacity="0.85"/>
+  <rect x="1094" y="330" width="14" height="22" rx="7" fill="#ffb04a" opacity="0.6"/>
+
+  <!-- ground -->
+  <path d="M0 380 Q320 352 640 366 T1280 376 V420 H0 Z" fill="url(#ground)"/>
+
+  <!-- title -->
+  <text x="640" y="196" text-anchor="middle" font-family="'Arial Black','Segoe UI Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="132" letter-spacing="14" fill="#000000" opacity="0.45" transform="translate(4 6)">REVIVE</text>
+  <text x="640" y="196" text-anchor="middle" font-family="'Arial Black','Segoe UI Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="132" letter-spacing="14" fill="url(#gold)" stroke="#5a2a10" stroke-width="2">REVIVE</text>
+
+  <text x="640" y="250" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="600" fill="#f4ecff">Arel Wars 2, playable again on 64-bit Android</text>
+
+  <!-- chips -->
+  <g font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="600" text-anchor="middle">
+    <rect x="330" y="282" width="190" height="38" rx="19" fill="#ffffff" fill-opacity="0.08" stroke="#ffc94a" stroke-opacity="0.6"/>
+    <text x="425" y="307" fill="#ffe3a0">32-bit → 64-bit</text>
+    <rect x="545" y="282" width="190" height="38" rx="19" fill="#ffffff" fill-opacity="0.08" stroke="#b58cff" stroke-opacity="0.7"/>
+    <text x="640" y="307" fill="#e2d2ff">Private server</text>
+    <rect x="760" y="282" width="190" height="38" rx="19" fill="#ffffff" fill-opacity="0.08" stroke="#5fd39a" stroke-opacity="0.7"/>
+    <text x="855" y="307" fill="#c9f5de">No error popups</text>
+  </g>
+</svg>
